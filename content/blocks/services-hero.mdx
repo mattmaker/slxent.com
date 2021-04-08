@@ -1,0 +1,11 @@
+export const serviceBlock = ({heading, image}) => (
+  <Section pt="8|12|16|80" mt="-100px" height="100vh" backgroundImage={image} backgroundSize="cover" backgroundRepeat="no-repeat">
+    <Container>
+      <Flexbox flexDirection="column" textAlign="center">
+        <H1 m="0" fontWeight="light" color="#fff" lineHeight="tight">
+          {heading}
+        </H1>
+      </Flexbox>
+    </Container>
+  </Section>
+)

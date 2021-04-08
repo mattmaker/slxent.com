@@ -1,0 +1,17 @@
+export const galleryCta = ({eventType}) => (
+<Section py="8|12|16|24">
+  <Container>
+    <Div textAlign="center" bg="heading" color="background" p="10" rounded="3xl">
+      <H2 fontSize="4xl|5xl" m="0" color="background">
+        Ready to work with us?
+      </H2>
+      <P fontSize="xl|2xl" mt="2">
+        Your {eventType} can look just like this.
+      </P>
+      <Button as="a" href="/contact" bg="heading" color="background" border="1px solid #fff" hoverBackground="#fff" hoverColor="heading" variant="lg">
+        Let's Talk <Icon name="arrowRight" size="4" ml="2" />
+      </Button>
+    </Div>
+  </Container>
+</Section>
+)

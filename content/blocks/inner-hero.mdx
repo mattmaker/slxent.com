@@ -1,0 +1,11 @@
+export const innerHero = ({heading, image}) => (
+  <Section pt="8|12|16|24" mt="-70px|-100px" height="50vh|75vh" background={image} backgroundSize="cover" backgroundRepeat="no-repeat">
+    <Container>
+      <Flexbox flexDirection="column">
+        <H1 mt="28|32" fontWeight="light" textAlign="center" alignItem="center" color="#fff" lineHeight="tight">
+          {heading}
+        </H1>
+      </Flexbox>
+    </Container>
+  </Section>
+)

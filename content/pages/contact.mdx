@@ -1,0 +1,78 @@
+---
+title: Contact Us
+excerpt: SLX Productions | Book us for your next event.
+slug: "/contact"
+---
+
+<Block src="inner-hero" heading="Contact Us" image="url('https://res.cloudinary.com/slxent/image/upload/v1605219467/Portfolio/contact_e06cdz.webp')" image="url('https://res.cloudinary.com/slxent/image/upload/v1605219467/Portfolio/contact_vhc6vc.jpg')" />
+
+<Section py="8|12|16|24">
+  <Container>
+    <Grid col="1|2" gap="8|12|16" alignItems="center">
+      <Div>
+        <P fontSize="s|m" mt="2">
+          Are you ready to schedule your consultation with SLX Entertainment? Let us make your next event a huge success! Send us an email or stop by our office on Santa Monica Boulevard to get started.
+          <Br />
+          <Br />
+          Interested in working for SLX ? Send us an email with your technical experience and work history to ariel@slxent.com. We’re always growing and would love to bring aboard creative and energetic people. Although we prefer experience in various aspects of event production, we regularly have training sessions.
+        </P>
+      </Div>
+      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto">
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-name">Name</Label>
+          </VisuallyHidden>
+          <Input type="text" id="form-01-name" name="fname" placeholder="Name" />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-email">Email</Label>
+          </VisuallyHidden>
+          <Input
+            type="email"
+            id="form-01-email"
+            name="email-address"
+            placeholder="Email"
+          />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-phone">Phone</Label>
+          </VisuallyHidden>
+          <Input
+            type="tel"
+            id="form-01-phone"
+            name="phone-number"
+            placeholder="Phone"
+          />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-subject">Subject</Label>
+          </VisuallyHidden>
+          <Select id="form-01-subject" name="subject">
+            <Option value="">Select</Option>
+            <Option value="one">Sound</Option>
+            <Option value="two">Lighting</Option>
+            <Option value="three">DJ</Option>
+            <Option value="four">Multiple Services</Option>
+          </Select>
+        </Div>
+        <Div colStart="span 2">
+          <VisuallyHidden>
+            <Label htmlFor="form-01-message">Message</Label>
+          </VisuallyHidden>
+          <Textarea
+            placeholder="Message"
+            id="form-01-message"
+            name="message-area"
+            rows="5"
+          />
+        </Div>
+        <Button type="submit" variant="primary" colStart="span 2">
+          Send message
+        </Button>
+      </Form>
+    </Grid>
+  </Container>
+</Section>

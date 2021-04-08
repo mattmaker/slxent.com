@@ -1,0 +1,66 @@
+export const Testimonials = ({ ...props }) => (
+  <Section py="8|12|16|24" {...props}>
+    <Container>
+      <H2 m="0" textAlign="center">
+        What Clients Say
+      </H2>
+      <Grid col="1|2|3" gap="8" mt="8">
+        <Testimonial
+          author="Anna S."
+          description=""
+          message="We hired Ariel to DJ our wedding and provide lighting. Everything he and his team did that night surpassed all of our expectations. They went above and beyond on our lighting setup - it felt like we had our own private concert going on. The music and sound was also on point. Can not thank him and the team enough for making our wedding so perfect and unforgettable."
+        />
+        <Testimonial
+          author="Jen & Roy"
+          description=""
+          message="Ariel!!! I can't even begin to describe how amazing you made our wedding. You had people on the dance floor all night and had the most amazing energy. Roy and I can't thank you enough for all of you hard work before and during our wedding. It was truly a memorable night thanks to you!!"
+        />
+        <Testimonial
+          author="Ali F."
+          description=""
+          message="DJ Whyt Lion makes the night so special with attention to every detail. Ariel brought additional mood lighting and even hooked up a projector so we could show a video and slide show. Full service and really great work."
+        />
+        <Testimonial
+          author="Elham & Jacob"
+          description=""
+          message="Ariel, Jacob and I can't thank you enough for killing it at our wedding! We had the time of our lives and the music was absolutely perfect. You helped create memories that will last a lifetime. You're amazing! Thanks so much for everything!"
+        />
+        <Testimonial
+          author="Becky F."
+          description=""
+          message="We flew Ariel and the SLX team into NYC for our American/Persian wedding. The crowd loved the diverse types of tracks DJ Ariel played alongside his percussionist, which was a totally unique vibe to many in the crowd, and the floor was packed with guests dancing all night. We keep getting calls telling us it was the most fun wedding they've ever been to!"
+        />
+        <Testimonial
+          author="Michael N."
+          description=""
+          message="Hired SLX Productions for my corporate holiday party, let me just say...Couldn't be happier! Ariel and his team were very professional and exceeded my expectations! Will definitely hire for all my future events."
+        />
+      </Grid>
+    </Container>
+    <Container pt="8|12|16">
+        <Grid col="2|3" gap="3|6" justifyItems="center">
+            <Image width="100px" py="2" src="slx-productions-ignite-logo.png" alt="Ignite" />
+            <Image width="100px" py="2" src="slx-productions-equinox-logo.png" alt="Equinox" />
+            <Image width="100px" py="2" src="slx-productions-epione-logo.png" alt="Epione" />
+            <Image width="100px" py="2" src="slx-productions-saint-laurent-logo.png" alt="Saint Laurent" />
+            <Image width="100px" py="2" src="slx-productions-sothebys-logo.png" alt="Sotheby's" />
+            <Image width="100px" py="2" src="slx-productions-5w-public-relations.png" alt="5W Public Relations" />
+            <Image width="100px" py="2" src="slx-productions-hilarity4charity.png" alt="Hilarity For Charity" />
+            <Image width="100px" py="2" src="slx-productions-boys-and-girls-club-logo.png" alt="Boys & Girls Club" />
+            <Image display="none|block" width="100px" py="2" src="slx-productions-sl-charity-logo.png" alt="SLIG Charitable Foundation" />
+        </Grid>
+    </Container>
+  </Section>
+)
+
+export const Testimonial = ({ author, description, message, ...props }) => (
+  <Div position="relative" bg="text" rounded="lg" p="6" {...props}>
+    <P fontSize="14" color="background" opacity="1.0" m="0">{message}</P>
+    <P fontSize="sm" color="background" opacity="0.7" m="0" mt="4" fontWeight="semibold">
+      {author}
+    </P>
+    <P fontSize="6" color="background" m="0" fontSize="md">
+      {description}
+    </P>
+  </Div>
+)

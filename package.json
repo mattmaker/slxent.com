@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-starter-base",
+  "version": "0.1.13",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "dev": "gatsby clean && gatsby develop",
+    "preview": "gatsby build && gatsby serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@reflexjs/gatsby-theme-base": "^0.2.3",
+    "@theme-ui/match-media": "^0.3.1",
+    "fontsource-open-sans": "^3.0.9",
+    "fontsource-playfair-display": "^3.0.3",
+    "gatsby": "^2.22.11",
+    "gatsby-cli": "^2.12.102",
+    "gatsby-plugin-preact": "^4.1.0",
+    "preact": "^10.5.7",
+    "preact-render-to-string": "^5.1.11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

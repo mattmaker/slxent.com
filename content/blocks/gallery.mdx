@@ -1,0 +1,65 @@
+export const Cards = ({ ...props }) => (
+  <Section py="8|12|16|8" {...props}>
+    <Container>
+      <Grid col="2|2|3" gap="6|8">
+        <Card
+          image="https://res.cloudinary.com/slxent/image/upload/v1605219512/Portfolio/stella-morris-wedding-1_zwvx47.png"
+          title="Stella & Morris' Wedding"
+          link="/gallery/stella-morris-wedding"
+        />
+        <Card
+          image="mona-homan-wedding/mona-homan-1.jpg"
+          title="Mona & Homan's Wedding"
+          link="/gallery/mona-homan-wedding"
+        />
+        <Card
+          image="coachella-dusk-till-dawn/coachella-dusk-till-dawn-1.jpg"
+          title="Coachella - Dusk Till Dawn"
+          link="/gallery/coachella-dusk-till-dawn"
+        />
+        <Card
+          image="isaac-attarson-bar-mitzvah/isaac-attarson-bar-mitzvah-1.jpg"
+          title="Isaac Attarson's Bar Mitzvah"
+          link="/gallery/isaac-attarson-bar-mitzvah"
+        />
+        <Card
+          image="jen-roy-wedding/jen-roy-wedding-1.jpg"
+          title="Jen & Roy's Wedding"
+          link="/gallery/jen-roy-wedding"
+        />
+        <Card
+          image="nicole-moshe-wedding/nicole-moshe-wedding-1.jpg"
+          title="Nicole & Moshe's Wedding"
+          link="/gallery/nicole-moshe-wedding"
+        />
+        <Card
+          image="neda-alex-wedding/neda-alex-wedding-1.jpg"
+          title="Neda & Alex's Wedding"
+          link="/gallery/neda-alex-wedding"
+        />
+        <Card
+          image="payvand-brenn-wedding/payvand-brenn-wedding-1.jpg"
+          title="Payvand & Brenn's Wedding"
+          link="/gallery/payvand-brenn-wedding"
+        />
+      </Grid>
+    </Container>
+  </Section>
+)
+
+export const Card = ({ image, title, link, ...props }) => (
+  <Flexbox
+    flexDirection="column"
+    boxShadow="xl"
+    rounded="xl"
+    overflow="hidden"
+    {...props}
+  >
+    <Image src={image} w="full" h="32|40|64" />
+    <Flexbox flexDirection="column" flex="1" textAlign="center" p="6|8">
+      <A href={link} fontSize="xl" color="text" fontWeight="semibold" m="0" flex="1">
+        {title}
+      </A>
+    </Flexbox>
+  </Flexbox>
+)
