@@ -17,7 +17,42 @@ slug: "/contact"
           Interested in working for SLX ? Send us an email with your technical experience and work history to ariel@slxent.com. We’re always growing and would love to bring aboard creative and energetic people. Although we prefer experience in various aspects of event production, we regularly have training sessions.
         </P>
       </Div>
-      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto" netlify>
+      <Form name="SLX contact form" netlify>
+        <Div>
+          <VisuallyHidden>
+            <Label>Name</Label>
+          </VisuallyHidden>
+          <Input type="text" name="name" />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label>Email</Label>
+          </VisuallyHidden>
+          <Input type="email" name="email" placeholder="Email" />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label>Message</Label>
+          </VisuallyHidden>
+          <Input type="textarea" name="message" placeholder="Message" />
+        </Div>
+        <Button type="submit" variant="primary">Send</Button>
+      </Form>
+      <Form name="SLX Productions Form" method="POST" data-netlify="true">
+        <P>
+          <Label>Your Name: <Input type="text" name="name" /></Label>   
+        </P>
+        <P>
+          <Label>Your Email: <Input type="email" name="email" /></Label>
+        </P>
+        <P>
+          <Label>Message: <Textarea name="message"></Textarea></Label>
+        </P>
+        <P>
+          <Button type="submit">Send</Button>
+        </P>
+      </Form>
+      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto" name="OG Form" netlify>
         <Div>
           <VisuallyHidden>
             <Label htmlFor="form-01-name">Name</Label>
@@ -45,18 +80,6 @@ slug: "/contact"
             name="phone-number"
             placeholder="Phone"
           />
-        </Div>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-01-subject">Subject</Label>
-          </VisuallyHidden>
-          <Select id="form-01-subject" name="subject">
-            <Option value="">Select</Option>
-            <Option value="one">Sound</Option>
-            <Option value="two">Lighting</Option>
-            <Option value="three">DJ</Option>
-            <Option value="four">Multiple Services</Option>
-          </Select>
         </Div>
         <Div colStart="span 2">
           <VisuallyHidden>
