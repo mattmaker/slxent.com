@@ -7,17 +7,45 @@ slug: "/contact"
 <Block src="inner-hero" heading="Contact Us" image="url('https://res.cloudinary.com/slxent/image/upload/v1605219467/Portfolio/contact_e06cdz.webp')" image="url('https://res.cloudinary.com/slxent/image/upload/v1605219467/Portfolio/contact_vhc6vc.jpg')" />
 
 <Section py="8|12|16|24">
-  <Container>
-    <Grid col="1|2" gap="8|12|16" alignItems="center">
+  <Container width="50vw">
       <Div>
-        <P fontSize="s|m" mt="2">
+        <P fontSize="s|m" mb="12">
           Are you ready to schedule your consultation with SLX Entertainment? Let us make your next event a huge success! Send us an email to get started.
           <Br />
           <Br />
           Interested in working for SLX ? Send us an email with your technical experience and work history to ariel@slxent.com. We’re always growing and would love to bring aboard creative and energetic people. Although we prefer experience in various aspects of event production, we regularly have training sessions.
         </P>
       </Div>
-      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto" name="SLX Contact Form" netlify>
+    <Container>
+      <Form action="" netlify>
+        <Div mb="4">
+          <Input p="4" type="text" name="name" placeholder="Name" />
+        </Div>
+        <Div display="inline-flex" align-content="space-between">
+          <Div mb="4">
+            <Input p="4" type="email" name="email" placeholder="Email" />
+          </Div>
+          <Div mb="4">
+            <Input p="4" type="email" name="phone" placeholder="Phone" />
+          </Div>
+          <Div mb="4">
+          <Select id="form-01-subject" name="subject" height="58px" color="gray">
+            <Option value="">Select</Option>
+            <Option value="one">Sound</Option>
+            <Option value="two">Lighting</Option>
+            <Option value="three">Installs</Option>
+            <Option value="four">Multiple Services</Option>
+          </Select>
+        </Div>
+        </Div>
+        <Div mb="4">
+          <Textarea rows="5" type="text" name="text" placeholder="Message..."></Textarea>
+        </Div>
+        <Div>
+          <Button type="submit" variant="primary">SUBMIT</Button>
+        </Div>
+      </Form>
+      {/* <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto" name="SLX Contact Form" netlify>
         <Div>
           <VisuallyHidden>
             <Label htmlFor="form-01-name">Name</Label>
@@ -72,7 +100,7 @@ slug: "/contact"
         <Button type="submit" variant="primary" colStart="span 2">
           Send message
         </Button>
-      </Form>
-    </Grid>
+      </Form> */}
+    </Container>
   </Container>
 </Section>
