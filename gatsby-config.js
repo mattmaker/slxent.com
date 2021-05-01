@@ -3,7 +3,7 @@ require(`dotenv`).config()
 module.exports = {
   siteMetadata: {
     title: "SLX Entertainment",
-    description: "Sound. Lighting. Life.",
+    description: "Lights. Audio. Entertainment!",
     siteUrl: "https://slxent.com",
   },
   plugins: [
