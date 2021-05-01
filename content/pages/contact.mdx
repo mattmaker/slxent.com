@@ -9,15 +9,17 @@ slug: "/contact"
 <Section py="8|12|16|24">
   <Container width="50vw">
       <Div>
-        <P fontSize="s|m" mb="12">
-          Are you ready to schedule your consultation with SLX Entertainment? Let us make your next event a huge success! Send us an email to get started.
-          <Br />
-          <Br />
-          Interested in working for SLX ? Send us an email with your technical experience and work history to ariel@slxent.com. We’re always growing and would love to bring aboard creative and energetic people. Although we prefer experience in various aspects of event production, we regularly have training sessions.
+        <P fontSize="s|m|2xl" mb="12">
+          Are you ready to schedule your consultation with SLX Entertainment? Let us make your next event a huge success!
         </P>
+        <Div textAlign="center" mb="12">
+          <P>Call us at:</P>
+          <Link href="tel:+13109232081" fontWeight="semibold" fontSize="48px" color="black" textAlign="center">(310) 923-2081</Link>
+          <P>or fill out the form below:</P>
+        </Div>
       </Div>
     <Container>
-      <Form action="https://slxent.com/thank-you" method="POST" name="SLX Form" data-netlify="true">
+      <Form action="https://getform.io/f/ba76a99f-4325-4fae-945f-d37bf894745c" method="POST">
         <Div mb="4">
           <Input p="4" type="text" name="name" placeholder="Name" />
         </Div>
@@ -39,62 +41,15 @@ slug: "/contact"
           <Button type="submit" variant="primary">SUBMIT</Button>
         </Div>
       </Form>
-      {/* <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto" name="SLX Contact Form" netlify>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-01-name">Name</Label>
-          </VisuallyHidden>
-          <Input type="text" id="form-01-name" name="fname" placeholder="Name" />
-        </Div>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-01-email">Email</Label>
-          </VisuallyHidden>
-          <Input
-            type="email"
-            id="form-01-email"
-            name="email-address"
-            placeholder="Email"
-          />
-        </Div>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-01-phone">Phone</Label>
-          </VisuallyHidden>
-          <Input
-            type="tel"
-            id="form-01-phone"
-            name="phone-number"
-            placeholder="Phone"
-          />
-        </Div>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-01-subject">Subject</Label>
-          </VisuallyHidden>
-          <Select id="form-01-subject" name="subject" height="50px">
-            <Option value="">Select</Option>
-            <Option value="one">Sound</Option>
-            <Option value="two">Lighting</Option>
-            <Option value="three">Installs</Option>
-            <Option value="four">Multiple Services</Option>
-          </Select>
-        </Div>
-        <Div colStart="span 2">
-          <VisuallyHidden>
-            <Label htmlFor="form-01-message">Message</Label>
-          </VisuallyHidden>
-          <Textarea
-            placeholder="Message"
-            id="form-01-message"
-            name="message-area"
-            rows="5"
-          />
-        </Div>
-        <Button type="submit" variant="primary" colStart="span 2">
-          Send message
-        </Button>
-      </Form> */}
+    </Container>
+    <Container>
+      <Div mt="12">
+        <P>
+        Interested in working for SLX ? Send us an email with your technical experience and work history to ariel@slxent.com. We’re always growing and would love to bring aboard creative and energetic people.
+        <Br />
+        Although we prefer experience in various aspects of event production, we regularly have training sessions.
+        </P>
+    </Div>
     </Container>
   </Container>
 </Section>
